@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #004d40, #1de9b6);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.contact-section {
+	width: 100%;
+	padding: 20px;
+}
+
+.contact-container {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	padding: 40px;
+	max-width: 700px;
+	width: 90%;
+	text-align: center;
+	box-shadow: 0 0 25px rgba(0, 255, 170, 0.3);
+}
+
+h1 {
+	color: #00ffaa;
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.intro {
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.contact-info p {
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+a {
+	color: #00e6ac;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.social-links {
+	margin: 25px 0;
+}
+
+.social-btn {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 10px 20px;
+	background: #222;
+	border-radius: 30px;
+	color: #fff;
+	transition: background 0.3s ease;
+	font-weight: bold;
+}
+
+.social-btn.instagram:hover {
+	background: #e1306c;
+}
+
+.social-btn.facebook:hover {
+	background: #3b5998;
+}
+
+.email-section {
+	margin-top: 30px;
+}
+
+.email-button {
+	display: inline-block;
+	padding: 12px 25px;
+	background: #00ffaa;
+	color: #000;
+	font-weight: bold;
+	border-radius: 8px;
+	transition: background 0.3s;
+}
+
+.email-button:hover {
+	background: #00e699;
+}
