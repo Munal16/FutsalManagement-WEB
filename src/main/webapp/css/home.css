@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to bottom right, #0d1f1e, #0f3d3b);
+	color: #ffffff;
+	min-height: 100vh;
+}
+
+main {
+	padding: 40px 20px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #00ffcc;
+	text-shadow: 0 0 8px #00ffcc;
+	margin-bottom: 30px;
+}
+
+/* Futsal Courts Section */
+.court-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	gap: 30px;
+	justify-items: center;
+	align-items: start;
+	margin-bottom: 60px;
+}
+
+.court-card {
+	background: #112e2d;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 255, 153, 0.2);
+	overflow: hidden;
+	width: 100%;
+	max-width: 280px;
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.court-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 20px rgba(0, 255, 153, 0.4);
+}
+
+.court-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+
+.court-card h3 {
+	margin: 15px 0 5px;
+	color: #00ffa6;
+	font-size: 1.2rem;
+}
+
+.court-card p {
+	padding: 0 15px 20px;
+	font-size: 0.95rem;
+	color: #d5fff5;
+}
+
+/* Center the 4th card */
+.court-card:nth-child(4) {
+	grid-column: 2;
+}
+
+/* Shop Products */
+.product-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 60px;
+}
+
+.product-card {
+	background: #102b29;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 255, 153, 0.2);
+	overflow: hidden;
+	max-width: 280px;
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.product-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 25px rgba(0, 255, 153, 0.4);
+}
+
+.product-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.product-card h3 {
+	margin: 15px 0 5px;
+	color: #00ffa6;
+}
+
+.product-card p {
+	padding: 0 15px 20px;
+	color: #d5fff5;
+	font-size: 0.95rem;
+}
+
+.product-card button {
+	background-color: #00ff99;
+	color: #000;
+	border: none;
+	padding: 12px 20px;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #00ff99;
+	transition: 0.3s ease;
+}
+
+.product-card button:hover {
+	background-color: #0fd6a0;
+}
+
+/* Play in Style Gallery */
+.gallery-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 60px;
+}
+
+.gallery-card {
+	background: #102b29;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 255, 153, 0.2);
+	overflow: hidden;
+	max-width: 280px;
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.gallery-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 25px rgba(0, 255, 153, 0.4);
+}
+
+.gallery-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.gallery-card h3 {
+	color: #00ffa6;
+	margin: 10px 0;
+}
+
+.gallery-card button {
+	background-color: #00ff99;
+	color: #000;
+	border: none;
+	padding: 12px 20px;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #00ff99;
+	transition: 0.3s ease;
+}
+
+.gallery-card button:hover {
+	background-color: #0fd6a0;
+}

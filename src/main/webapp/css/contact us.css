@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00332e, #00bfa5);
+    color: white;
+    padding-top: 80px; /* space for fixed header if needed */
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 50px 30px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 255, 170, 0.4);
+}
+
+h1 {
+    font-size: 38px;
+    color: #00ffaa;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00ffaa;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cceee8;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    font-size: 17px;
+    color: #d2fef7;
+}
+
+a {
+    color: #00e6ac;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin: 35px 0;
+}
+
+.social-links p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 25px;
+    background: #222;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.social-btn.instagram:hover {
+    background: #e1306c;
+}
+
+.social-btn.facebook:hover {
+    background: #3b5998;
+}
+
+.email-section {
+    margin-top: 40px;
+}
+
+.email-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #aaffec;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #00ffaa;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.email-button:hover {
+    background: #00e699;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .email-button {
+        width: 100%;
+        padding: 14px 0;
+    }
+}

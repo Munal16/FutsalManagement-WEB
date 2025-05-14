@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #001d1a, #013f3a);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.cafeteria-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.cafeteria-section {
+    width: 100%;
+    max-width: 1300px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 170, 0.25);
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    color: #00ffaa;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00ffaa;
+}
+
+h2 {
+    font-size: 30px;
+    color: #00e6aa;
+    margin: 40px 0 20px;
+    text-shadow: 0 0 6px #00e6aa;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cceee8;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item-card {
+    background: #0f1f1d;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 8px 16px rgba(0, 255, 170, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+    background: #122927;
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-card h3 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+    color: #00ffd0;
+}
+
+.item-card p {
+    font-size: 15px;
+    padding: 0 15px;
+    color: #cccccc;
+    min-height: 70px;
+}
+
+.price {
+    display: block;
+    font-size: 20px;
+    margin: 15px 0;
+    color: #00ffaa;
+    font-weight: bold;
+}
+
+.footer-note {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #bbb;
+}

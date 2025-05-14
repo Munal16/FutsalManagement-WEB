@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0f2e, #003a3a);
+    color: #ffffff;
+    min-height: 100vh;
+    padding-top: 80px; /* For fixed header spacing */
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.about-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 255, 170, 0.3);
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #00ffaa;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffaa;
+}
+
+h2 {
+    font-size: 30px;
+    color: #00e699;
+    margin-top: 40px;
+    text-shadow: 0 0 6px #00e699;
+}
+
+.about-description {
+    font-size: 18px;
+    margin: 20px 0 30px;
+    line-height: 1.8;
+    color: #cceee8;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.profile-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00ffaa;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05);
+}
+
+.profile-details {
+    max-width: 500px;
+    text-align: left;
+    background-color: #122927;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.15);
+}
+
+.profile-details p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #e0f7f4;
+}
+
+.thank-you h3 {
+    margin-top: 50px;
+    font-size: 24px;
+    color: #00ffa8;
+    text-shadow: 0 0 8px #00ffa8;
+}
