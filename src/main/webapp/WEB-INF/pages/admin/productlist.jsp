@@ -13,13 +13,16 @@
 <body>
 
 <div class="container">
-    <h1>Product Management</h1>
 
-    <div class="top-actions">
-        <div class="search-box">
-            <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search by Product Name...">
-        </div>
+    <div class="header">
+        <h1>Product Management</h1>
+       <form action="${pageContext.request.contextPath}/logout" method="post" class="logout-form">
+            <button type="submit" class="logout-btn">Logout</button>
+            <a href="${pageContext.request.contextPath}/dashboard" class="back-link">← Back to Dashboard</a>
+        </form>
     </div>
+
+
 
     <table id="productTable" class="product-table">
         <thead>

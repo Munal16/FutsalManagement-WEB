@@ -1,7 +1,7 @@
 package com.futsal.model;
 
 public class bookingmodel {
-	private int id; // <-- Required for update/delete
+	private int id; 
 	private String fullname;
 	private String contact;
 	private String bookingDate;

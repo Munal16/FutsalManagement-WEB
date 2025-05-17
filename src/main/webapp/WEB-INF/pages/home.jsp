@@ -41,22 +41,22 @@
         <h2>⚽ Shop Futsal Gear</h2>
         <div class="product-grid">
             <div class="product-card">
-                <img src="${pageContext.request.contextPath}/images/system/back.jpg" alt="Jersey">
+                <img src="${pageContext.request.contextPath}/images/system/shop2.jpeg" alt="Jersey">
                 <h3>Futsal Jersey</h3>
                 <p>High-quality breathable jerseys built for performance and comfort.</p>
                 <button onclick="location.href='${pageContext.request.contextPath}/shopnow'">Buy Now</button>
             </div>
             <div class="product-card">
-                <img src="${pageContext.request.contextPath}/images/system/logo.jpeg" alt="Boots">
+                <img src="${pageContext.request.contextPath}/images/system/shop5.jpeg" alt="Boots">
                 <h3>Futsal Boots</h3>
                 <p>Non-slip grip soles with cushioned soles for speed & control.</p>
                 <button onclick="location.href='${pageContext.request.contextPath}/shopnow'">Buy Now</button>
             </div>
             <div class="product-card">
-                <img src="${pageContext.request.contextPath}/images/system/kickball.jpeg" alt="Football">
+                <img src="${pageContext.request.contextPath}/images/system/shop3.jpeg" alt="Football">
                 <h3>Pro Football</h3>
                 <p>Official-size futsal balls engineered for control and speed.</p>
-                <button onclick="location.href='${pageContext.request.contextPath}/shopnow'">Buy Now</button>
+                <button onclick="location.href='${pageContext.request.contextPath}/product'">Buy Now</button>
             </div>
         </div>
     </section>

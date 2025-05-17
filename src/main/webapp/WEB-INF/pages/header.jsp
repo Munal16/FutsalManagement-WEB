@@ -14,7 +14,7 @@
             <a href="${pageContext.request.contextPath}/user">User Profile</a>
         </nav>
         <form action="${pageContext.request.contextPath}/logout" method="post" class="logout-form">
-            <button type="submit" class="logout-btn">Logout</button>
-        </form>
+    <button type="submit" class="logout-btn">Logout</button>
+</form>
     </div>
 </header>

@@ -12,17 +12,23 @@
 
 <section class="booking-section">
   <div class="container">
-    <h1>Booking Management</h1>
+    <div class="header-actions">
+      <h1>Booking Management</h1>
+      <form action="${pageContext.request.contextPath}/logout" method="post" class="logout-form">
+        <button type="submit" class="logout-btn">Logout</button>
+        <a href="${pageContext.request.contextPath}/dashboard" class="back-link"> Back to Dashboard</a>
+      </form>
+    </div>
     <p class="intro-text">Manage all Futsal bookings. Add, Update, Delete or Search bookings easily!</p>
 
     <div class="top-actions">
       <div class="add-button">
         <a href="${pageContext.request.contextPath}/addBooking" class="btn">Add New Booking</a>
       </div>
-      <form method="get" action="bookinglistController">
+      <form method="get" action="bookinglistController" class="search-box">
         <input type="text" name="searchName" placeholder="Search by Customer Name"
                value="${param.searchName != null ? param.searchName : ''}" />
-        <button type="submit">Search</button>
+        <button type="submit" class="btn">Search</button>
         <input type="hidden" name="action" value="list" />
       </form>
     </div>

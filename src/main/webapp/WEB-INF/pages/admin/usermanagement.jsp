@@ -4,15 +4,19 @@
 <html>
 <head>
     <title>User Management</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/dashboard.css">
+ 
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/usermanagement.css">
-    
 </head>
 <body>
     <div class="dashboard-container">
-        <header>
-            <h1>User Management</h1>
-            <a href="${pageContext.request.contextPath}/dashboard.jsp">← Back to Dashboard</a>
+        <header class="page-header">
+            <div class="header-left">
+                <h1>User Management</h1>
+                <a href="${pageContext.request.contextPath}/dashboard" class="back-link">← Back to Dashboard</a>
+            </div>
+            <form action="${pageContext.request.contextPath}/logout" method="post" class="logout-form">
+                <button type="submit" class="logout-btn">Logout</button>
+            </form>
         </header>
 
         <section>
@@ -28,7 +32,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="table-container">
             <h2>Customer List</h2>
             <table border="1" cellpadding="10">
                 <tr>
@@ -45,7 +49,8 @@
                         <td>${c.address}</td>
                         <td>${c.username}</td>
                         <td>
-                            <a href="${pageContext.request.contextPath}/usermanagement?action=delete&id=${c.customerId}" onclick="return confirm('Delete this user?');">Delete</a>
+                            <a href="${pageContext.request.contextPath}/usermanagement?action=delete&id=${c.customerId}" 
+                               class="delete-btn" onclick="return confirm('Delete this user?');">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>
